@@ -1,9 +1,10 @@
 :root {
-  --branding-color: #6c63ff;
+  --branding-color: #486899;
   --secondary-color: #f9f7fe;
   --font-color: #22313f;
   --heading-font-family: "Six Caps", sans-serif;
   --default-font-family: "Poppins", sans-serif;
+  --default-box-shadow: 3px 3px 3px lightgrey;
 }
 
 body {
@@ -21,7 +22,7 @@ h6 {
 }
 
 h1 {
-  font-size: 96px;
+  font-size: 80px;
   line-height: 1.5;
 }
 h2 {
@@ -88,20 +89,35 @@ p {
 
 .btn-branding {
   background: var(--branding-color);
-  border-radius: 4px;
+  border-radius: 5px;
   color: white;
   font-size: 18px;
   line-height: 27px;
-  padding: 15px 30px;
+  padding: 12px 25px;
+  transition: all 250ms ease-in-out;
+}
+
+.btn-branding:hover {
+  font-size: 22px;
+  color: whitesmoke;
+  background: #6891a1;
 }
 
 .btn-branding-outline {
-  color: var(--branding-color);
-  border: 1px solid var(--branding-color);
-  border-radius: 4px;
+  color: var(--font-color);
+  border: 1px solid transparent;
+  background: #d7f8f7;
+  border-radius: 8px;
   font-size: 18px;
   line-height: 27px;
-  padding: 15px 30px;
+  padding: 8px 15px;
+  box-shadow: var(--default-box-shadow);
+  transition: all 200ms ease-in-out;
+}
+
+.btn-branding-outline:hover {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .project-description {
