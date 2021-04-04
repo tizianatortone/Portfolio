@@ -1,5 +1,5 @@
 :root {
-  --branding-color: #486899;
+  --branding-color: #99ddcc;
   --secondary-color: #f9f7fe;
   --font-color: #22313f;
   --heading-font-family: "Six Caps", sans-serif;
@@ -25,11 +25,20 @@ h1 {
   font-size: 80px;
   line-height: 1.5;
 }
+
+.sub-title {
+  font-size: 50px;
+}
+
+.content .sub-title {
+  font-size: 50px;
+}
+
 h2 {
-  font-size: 46px;
+  font-size: 38px;
 }
 h3 {
-  font-size: 36px;
+  font-size: 28px;
 }
 
 p {
@@ -88,9 +97,9 @@ p {
 }
 
 .btn-branding {
-  background: var(--branding-color);
+  background: #99ddcc;
   border-radius: 5px;
-  color: white;
+  color: var(--font-color);
   font-size: 18px;
   line-height: 27px;
   padding: 12px 25px;
@@ -98,9 +107,8 @@ p {
 }
 
 .btn-branding:hover {
-  font-size: 22px;
-  color: whitesmoke;
-  background: #6891a1;
+  color: var(--font-color);
+  background: #c1c0b9;
 }
 
 .btn-branding-outline {
@@ -156,6 +164,10 @@ nav li.active a {
   color: var(--branding-color);
 }
 
+.content-contact {
+  background: var(--secondary-color);
+}
+
 footer {
   margin: 60px 0;
 }
@@ -172,7 +184,7 @@ footer .contact-box p {
 
 footer .email-link {
   text-decoration: none;
-  color: black;
+  color: var(--font-color);
   font-size: 24px;
   text-align: center;
 }
@@ -194,6 +206,10 @@ footer .social-links a {
 footer .social-links a:hover {
   color: white;
   background: var(--branding-color);
+}
+
+.content-contact {
+  text-align: center;
 }
 
 @media (max-width: 960px) {
