@@ -1,6 +1,7 @@
 :root {
   --branding-color: #99ddcc;
   --secondary-color: #f9f7fe;
+  --third-color: #70acb1;
   --font-color: #22313f;
   --heading-font-family: "Six Caps", sans-serif;
   --default-font-family: "Poppins", sans-serif;
@@ -112,20 +113,25 @@ p {
 }
 
 .btn-branding-outline {
-  color: var(--font-color);
-  border: 1px solid transparent;
-  background: #d7f8f7;
-  border-radius: 8px;
-  font-size: 18px;
-  line-height: 27px;
-  padding: 8px 15px;
-  box-shadow: var(--default-box-shadow);
-  transition: all 200ms ease-in-out;
+  color: #70acb1;
+  font-size: 33px;
+  transition: all 0.5s ease-in-out;
 }
 
 .btn-branding-outline:hover {
-  font-weight: bold;
-  font-size: 20px;
+  transform: scale(1.2) perspective(0.5px);
+  color: var(--branding-color);
+}
+
+.btn-certificate {
+  color: var(--font-color);
+  text-decoration: underline;
+  transition: all 200ms ease-in-out;
+}
+
+.btn-certificate:hover {
+  color: var(--branding-color);
+  cursor: pointer;
 }
 
 .project-description {
@@ -155,13 +161,13 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #272142;
+  color: var(--font-color);
   transition: all 100ms ease-in-out;
 }
 
 nav a:hover,
 nav li.active a {
-  color: var(--branding-color);
+  color: var(--third-color);
 }
 
 .content-contact {
@@ -185,7 +191,7 @@ footer .contact-box p {
 footer .email-link {
   text-decoration: none;
   color: var(--font-color);
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -199,7 +205,7 @@ footer .social-links a {
   background: var(--secondary-color);
   padding: 10px 14px;
   border-radius: 50%;
-  font-size: 18px;
+  font-size: 22px;
   transition: all 100ms ease-in-out;
 }
 
