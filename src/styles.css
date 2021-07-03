@@ -11,43 +11,102 @@
 body,
 html {
   height: 100%;
+  margin: 0;
+  padding: 0;
   font-family: var(--default-font-family);
   background: #f8f8f8;
 }
+.navbar {
+  background: transparent;
+  width: 100%;
+  position: fixed;
+}
+
+.navbar img {
+  display: none;
+}
+.nav-link {
+  color: transparent;
+  padding: 10px 50px;
+  position: relative;
+}
+
+.scrolling-active .navbar {
+  background-color: #f8f8f8;
+  opacity: 0.9;
+  box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+}
+.scrolling-active .nav-link {
+  color: var(--font-color);
+}
+.scrolling-active .navbar img {
+  display: block;
+  width: 10%;
+  height: auto;
+  float: right;
+  padding-left: 100px;
+}
+.nav-link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--third-color);
+  transition: transform 0.25s ease-out;
+}
+
+.scrolling-active .nav-link:hover {
+  color: var(--third-color);
+}
+
+.nav-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
 .hero {
   background-image: url("/images/intropic.jpg");
+  position: relative;
   height: 100%;
+  overflow: hidden;
   background-size: 50% 100%;
   background-position: left center;
   background-repeat: no-repeat;
 }
 
-.hero h1 {
-  text-align: right;
-  padding-top: 80px;
-  margin-right: 60px;
-  font-size: 100px;
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+}
+.hero-text h1 {
+  font-size: 80px;
+  display: inline-block;
 }
 
-.hero h2 {
-  text-align: right;
-  margin-right: 60px;
+.hero-text h2 {
+  display: block;
+  font-size: 32px;
 }
-#main-button {
+.hero-text #main-button {
+  display: inline-block;
   margin-top: 40px;
   margin-right: 100px;
   border: 3px solid var(--font-color);
-  background: var(--font-color);
-  color: #fff;
+  background: transparent;
+  color: var(--font-color);
   font-weight: 300;
   padding: 20px 25px;
   font-size: 20px;
   transition: all 250ms ease-in-out;
 }
 
-#main-button:hover {
-  background: transparent;
-  color: var(--font-color);
+.hero-text #main-button:hover {
+  background: var(--font-color);
+  color: #fff;
 }
 h1,
 h2,
@@ -152,33 +211,6 @@ p {
 #profile-pic {
   height: 60%;
   width: auto;
-}
-
-nav {
-  padding: 20px 0;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  display: inline;
-  list-style: none;
-  line-height: 42px;
-  margin-left: 15px;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--font-color);
-  transition: all 100ms ease-in-out;
-}
-
-nav a:hover,
-nav li.active a {
-  color: var(--third-color);
 }
 
 .content-contact {
