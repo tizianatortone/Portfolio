@@ -219,13 +219,13 @@ p {
 
 section {
   background: var(--secondary-color);
-  margin-top: 90px;
+  margin-top: 60px;
   padding: 35px;
 }
 section .row {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 section h2,
@@ -233,6 +233,9 @@ h3 {
   text-align: center;
 }
 
+.all-skills {
+  margin-top: 0;
+}
 .all-skills p {
   margin-left: 15px;
 }
@@ -348,6 +351,10 @@ footer .social-links a:hover {
   }
   nav a {
     font-size: 13px;
+  }
+  .certificates .row {
+    display: flex;
+    flex-direction: column;
   }
   footer .contact-box {
     padding: 30px;
