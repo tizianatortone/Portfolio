@@ -1,6 +1,6 @@
 :root {
-  --branding-color: #99ddcc;
-  --secondary-color: #f9f7fe;
+  --branding-color: #af0069;
+  --secondary-color: #99ddcc;
   --font-color: #22313f;
   --heading-font-family: "Six Caps", sans-serif;
   --default-font-family: "Poppins", sans-serif;
@@ -32,7 +32,7 @@ html {
   box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.5);
 }
 .scrolling-active .nav-link {
-  color: var(--secondary-color);
+  color: #f8f8f8;
 }
 
 .nav-link:after {
@@ -43,12 +43,12 @@ html {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: var(--branding-color);
+  background-color: var(--secondary-color);
   transition: transform 0.25s ease-out;
 }
 
 .scrolling-active .nav-link:hover {
-  color: var(--branding-color);
+  color: var(--secondary-color);
 }
 
 .nav-link:hover:after {
@@ -97,12 +97,15 @@ html {
   background: var(--font-color);
   color: #fff;
 }
+
 h1,
 h2,
 h3,
 h4 {
   color: var(--font-color);
   font-family: var(--heading-font-family);
+  text-align: center;
+  margin-top: 30px;
 }
 #projects {
   font-size: 50px;
@@ -119,7 +122,7 @@ p {
 }
 
 .btn-branding {
-  background: var(--branding-color);
+  background: var(--secondary-color);
   border-radius: 5px;
   color: var(--font-color);
   font-size: 18px;
@@ -186,11 +189,11 @@ p {
 
 .profile-links a {
   text-decoration: none;
-  border: 1px solid #af0069;
+  border: 1px solid var(--branding-color);
   border-radius: 15px;
   text-align: center;
   padding: 12px;
-  background: #af0069;
+  background: var(--branding-color);
   color: white;
   transition: all 200ms ease-in-out;
 }
@@ -249,8 +252,30 @@ h4 {
   margin-left: 80px;
 }
 
+.all-projects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 35px;
+  margin-top: 50px;
+}
+
+.all-projects p {
+  font-size: 15px;
+}
+
+.all-projects a {
+  text-decoration: none;
+  color: #af0069;
+}
+.work-img {
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.2);
+}
 footer {
   margin: 60px 0;
+  padding-bottom: 15px;
 }
 
 footer .contact-box {
@@ -260,7 +285,7 @@ footer .contact-box {
   border-radius: 10px;
 }
 footer .contact-box h3 {
-  color: var(--secondary-color);
+  color: #f8f8f8;
 }
 
 footer .email-link {
@@ -271,44 +296,46 @@ footer .email-link {
 }
 
 footer .email-link:hover {
-  color: var(--branding-color);
+  color: var(--secondary-color);
 }
 
 footer .social-links a {
   margin: 0 20px;
-  color: var(--branding-color);
-  background: var(--secondary-color);
-  padding: 10px 14px;
+  color: #f8f8f8;
+  background: var(--branding-color);
+  padding: 8px 12px;
   border-radius: 50%;
   font-size: 22px;
   transition: all 100ms ease-in-out;
 }
 
 footer .social-links a:hover {
-  color: var(--secondary-color);
-  background: var(--branding-color);
+  color: var(--branding-color);
+  background: #f8f8f8;
 }
 
 @media (max-width: 960px) {
   .hero {
-    background-size: 100% 100%;
+    padding: 20px 0;
+    background-size: 80% 100%;
   }
-  .hero-text {
-    right: 5%;
-  }
+
   .hero-text h1 {
-    font-size: 30px;
-    padding-top: 150px;
-    margin-left: 90px;
+    padding-right: 50px;
+    color: var(--branding-color);
+    font-size: 40px;
   }
 
   .hero-text h2 {
     display: none;
   }
   .hero-text #main-button {
-    padding: 10px 12px;
-    font-size: 17px;
+    background: var(--font-color);
+    color: #f8f8f8;
     margin-left: 90px;
+  }
+  .nav-link {
+    padding: 10px 10px;
   }
   #projects {
     font-size: 38px;
@@ -331,6 +358,9 @@ footer .social-links a:hover {
 
   .intro {
     grid-template-columns: 1fr;
+  }
+  .intro img {
+    width: 100%;
   }
   .intro p {
     text-align: center;
@@ -360,5 +390,15 @@ footer .social-links a:hover {
     display: flex;
     flex-direction: column;
     margin-left: 30px;
+  }
+  .all-projects {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .work-img {
+    display: none;
+  }
+  footer .social-links a {
+    font-size: 15px;
   }
 }
