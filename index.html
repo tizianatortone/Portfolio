@@ -1,229 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Front-end Developer Portfolio." />
-    <title>Portfolio: Tiziana Tortone</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/src/styles.css" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Front-end Developer Portfolio." />
+  <title>Portfolio: Tiziana Tortone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <script
-      src="https://kit.fontawesome.com/4c4be09c53.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div class="hero">
-      <header>
-        <nav class="navbar justify-content-center mb-5">
-          <a href="/" title="Go to homepage" class="nav-link active">Home</a>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
 
-          <a href="/about.html" title="About Tiziana Tortone" class="nav-link"
-            >About</a
-          >
-          <a href="/work.html" title="Tiziana Tortone's work" class="nav-link"
-            >My Work</a
-          >
-        </nav>
-      </header>
-      <div class="hero-text">
-        <h1>Tiziana Tortone</h1>
-        <br />
-        <br />
-        <h2><em>Front-end Developer based in Europe</em></h2>
-        <br />
-        <br />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/styles.css" />
 
-        <div class="text-end me-5 pe-5">
-          <a
-            href="#projects"
-            class="btn btn-branding"
-            title="Contact Tiziana Tortone"
-            id="main-button"
-            >&lt;/My Work&gt;
-          </a>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+
+  <script src="https://kit.fontawesome.com/4c4be09c53.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar justify-content-center mb-5">
+      <a href="/" title="Go to homepage" class="nav-link active">Home</a>
+
+      <a href="/about.html" title="About Tiziana Tortone" class="nav-link">About Me</a>
+      <a href="/work.html" title="Tiziana Tortone's work" class="nav-link">More Projects</a>
+    </nav>
+  </header>
+  <div class="hero">
+    <img src="/images/Subject2.png" class="img-fluid d-none d-md-block">
+    <div class="hero-text">
+      <h1>Tiziana Tortone</h1>
+
+      <h2><em>Front-end Developer based in Europe</em></h2>
+
+
+
+
+      <a href="#projects" class="btn btn-branding" title="Contact Tiziana Tortone" id="main-button">&lt;/My Work&gt;
+      </a>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <h1 id="projects">Featured Projects</h1>
+    <div class="main-card mb-5">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="/images/ReactW.png" class="img-fluid rounded" alt="React Weather Pic">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h2 class="card-title mb-4">React Weather App</h2>
+            <p class="card-text">Built with React Javascript Framework using
+              Bootstrap and an API integration (the OpenWeather API). The app
+              provides real and live data for input locations into the search
+              bar + geolocation.</p>
+            <br />
+            <a href="https://happy-almeida-b5c221.netlify.app/" target="_blank" class="btn-links" title="Launch App">
+              Launch App</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-card mb-5">
+      <div class="row g-0">
+        <div class="col-md-7">
+          <div class="card-body" id="right">
+            <h2 class="card-title mb-4">AI Generator Project</h2>
+            <p class="card-text">Built using an AI API integration. By providing a certain prompt + context, this app is
+              able to provide and output according to the user's instructions.</p>
+            <br />
+            <a href="https://roaring-churros-5ba18e.netlify.app/" target="_blank" class="btn-links"
+              title="Launch App">Launch
+              App</a>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <img src="/images/AIgenerator.png" class="img-fluid rounded" alt="AI Pic">
+        </div>
+      </div>
+    </div>
+    <div class="main-card mb-5">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="/images/worldclocks.png" class="img-fluid rounded" alt="World Clocks Pic">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h2 class="card-title mb-4">World Clocks Project</h2>
+            <p class="card-text">Built using Moment.js, a Js library plugged in order to
+              display different times according to different time zones. The
+              app allows the user to choose from different cities to check the
+              time and has also the option to get the local time for their
+              current time zone.</p>
+            <br />
+            <a href="https://inquisitive-jalebi-30beac.netlify.app/" target="_blank" class="btn-links"
+              title="Launch App">Launch App</a>
+          </div>
         </div>
       </div>
     </div>
 
-    <h1 class="text-center m-5" id="projects">Featured Projects</h1>
-    <div class="container">
-      <div class="grid">
-        <div class="row mb-5">
-          <div class="col d-none d-lg-block">
-            <img
-              src="/images/clocks.png"
-              alt="Weather App Picture"
-              class="img-fluid rounded ms-5 mt-5"
-            />
-          </div>
-
-          <div class="col">
-            <div class="project-description">
-              <h2 class="mb-5">World Clocks Project</h2>
-              <p class="mb-4 text-muted">
-                An app built using Moment.js, a Js library plugged in order to
-                display different times according to different time zones. The
-                app allows the user to choose from different cities to check the
-                time and has also the option to get the local time for their
-                current time zone.
-              </p>
-              <a
-                href="https://inquisitive-jalebi-30beac.netlify.app/"
-                target="_blank"
-                class="btn btn-branding-outline"
-                title="Launch App"
-                ><i class="fas fa-angle-double-right"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="row mb-5">
-          <div class="col">
-            <div class="project-description">
-              <h2 class="mb-5">React Weather Project</h2>
-              <p class="mb-4 text-muted">
-                A weather app built with React Javascript Framework using
-                Bootstrap and an API incorporation, the OpenWeather API. The app
-                provides real and live data for input locations into the search
-                bar. It also has the option to get weather data for their
-                current and exact location.
-              </p>
-              <a
-                href="https://happy-almeida-b5c221.netlify.app/"
-                target="_blank"
-                class="btn btn-branding-outline"
-                title="Launch App"
-                ><i class="fas fa-angle-double-right"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col d-none d-lg-block">
-            <img
-              src="/images/ReactW.png"
-              alt="React App Picture"
-              class="img-fluid rounded mt-5"
-            />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col d-none d-lg-block">
-            <img
-              src="/images/Dictionary.png"
-              alt="Dictionary App Picture"
-              class="img-fluid mb-5"
-            />
-          </div>
-
-          <div class="col">
-            <div class="project-description">
-              <h2 class="mb-5">React Dictionary Project</h2>
-              <p class="mb-4 text-muted">
-                Dictionary App using React Javascript Framework plus two
-                different APIs integration. One that allows users to get real
-                definitions for input words into the search bar while the other
-                API provides images of the search value.
-              </p>
-              <a
-                href="https://kind-lalande-53b2cf.netlify.app/"
-                class="btn btn-branding-outline"
-                title="Launch App"
-                target="_blank"
-                ><i class="fas fa-angle-double-right"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row mb-5">
-        <div class="col">
-          <div class="project-description">
-            <h2 class="mb-5">Coaching Website</h2>
-            <p class="mb-4 text-muted">
-              Website created by using HTML, CSS and Javascript; and hosted on
-              own domain with Netlify.
+    <div class="main-card mb-5">
+      <div class="row g-0">
+        <div class="col-md-8">
+          <div class="card-body" id="right">
+            <h2 class="card-title mb-4">React Dictionary App</h2>
+            <p class="card-text">Built with React Javascript Framework plus two
+              different APIs integration. One for
+              definitions of any word typed in the search bar and one for images according to the user's input.
             </p>
-            <a
-              href="https://www.ivanachittocoaching.com/"
-              target="_blank"
-              class="btn btn-branding-outline"
-              title="Launch App"
-              ><i class="fas fa-angle-double-right"></i
-            ></a>
+            <br />
+            <a href=" https://kind-lalande-53b2cf.netlify.app/" target="_blank" class="btn-links"
+              title=" Launch App">Launch App</a>
           </div>
         </div>
-        <div class="col d-none d-lg-block">
-          <img
-            src="/images/coachingWeb.png"
-            alt="React App Picture"
-            class="img-fluid rounded mt-5"
-          />
+        <div class="col-md-4">
+          <img src="/images/dictionary.png" class="img-fluid rounded" alt="Dictionary Pic">
         </div>
       </div>
-
-      <footer>
-        <div
-          class="contact-box d-flex justify-content-between mb-5 d-none d-md-flex"
-        >
-          <div>
-            <h3>Work Inquiry</h3>
-            <p class="text-muted">Let's work together!</p>
-          </div>
-
-          <div>
-            <a
-              href="mailto:tizianamtortone@gmail.com"
-              class="btn btn-branding"
-              title="Contact Tiziana Tortone"
-              >Contact me</a
-            >
-          </div>
-        </div>
-        <div class="d-flex justify-content-center mb-5">
-          <a
-            href="mailto:tizianamtortone@gmail.com"
-            title="E-mail me!"
-            target="_blank"
-            class="email-link"
-            >tizianamtortone@gmail.com</a
-          >
-        </div>
-        <div class="social-links d-flex justify-content-center">
-          <a
-            href="https://github.com/tizianatortone?tab=repositories"
-            target="_blank"
-            title="Check my Github"
-          >
-            <i class="fab fa-github"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/tiziana-tortone-46760947/"
-            target="_blank"
-            title="Linkedin Profile"
-          >
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </div>
-      </footer>
     </div>
-    <script src="/src/script.js"></script>
-  </body>
+
+
+
+
+
+    <footer>
+
+
+      <div class="d-flex justify-content-center mb-5">
+        <a href="mailto:tizianamtortone@gmail.com" title="E-mail me!" target="_blank"
+          class="email-link">tizianamtortone@gmail.com</a>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/tizianatortone?tab=repositories" target="_blank" title="Check my Github">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/tiziana-tortone-46760947/" target="_blank" title="Linkedin Profile">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script src="/src/script.js"></script>
+</body>
+
 </html>
