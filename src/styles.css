@@ -61,7 +61,7 @@ html {
 
 .hero {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 
 .hero img {
@@ -113,6 +113,7 @@ h1 {
   color: var(--branding-color);
   font-family: var(--heading-font-family);
   text-align: center;
+
 }
 
 
@@ -299,27 +300,39 @@ footer .social-links a:hover {
 }
 
 @media (max-width: 960px) {
-  .hero {
-    background-color: var(--branding-color);
-    padding: 20px 0;
-    opacity: 0.8;
 
+  .hero {
+    height: 500px;
+    background: rgb(34, 49, 63);
+    background: linear-gradient(175deg, rgba(34, 49, 63, 1) 51%, rgba(198, 137, 183, 1) 63%, rgba(175, 0, 105, 1) 77%);
+  }
+
+  .hero-text {
+    padding: 0;
+    margin: 35px 20px;
   }
 
   .hero-text h1 {
-    color: #f8f8f8;
+    color: var(--branding-color);
     font-size: 40px;
+    text-align: left;
+    padding: 0;
+
+  }
+
+  h6 {
+    color: #c689b7;
+    font-family: var(--default-font-family);
+    font-weight: 100;
   }
 
   .hero-text h2 {
-    color: #f8f8f8;
-    font-size: 20px;
+    color: #22313f;
+    font-size: 30px;
+    padding-top: 250px;
   }
 
-  .hero-text #main-button {
-    padding: 10px;
-    display: block;
-  }
+
 
   .nav-link {
     padding: 10px 10px;

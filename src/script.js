@@ -23,3 +23,9 @@ const raf = () => {
 
 requestAnimationFrame(raf);
 window.addEventListener("scroll", scrollInProgress);
+
+new Typewriter("#typewriter", {
+  strings: ["Welcome to my online portfolio!"],
+  autoStart: true,
+  loop: true,
+});
