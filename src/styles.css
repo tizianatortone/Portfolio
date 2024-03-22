@@ -120,6 +120,7 @@ h1 {
   width: 85%;
   display: block;
   margin: 0 auto;
+  background-color: #fff;
 }
 
 .card-body {
@@ -242,7 +243,6 @@ section .row {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
 
-
 }
 
 .work-img {
@@ -252,12 +252,15 @@ section .row {
 
 .projects-card {
   padding: 30px;
-  background-color: var(--font-color);
-  color: #f8f8f8;
+  background-color: #fff;
+  color: var(--font-color);
   box-shadow: var(--default-box-shadow);
   border-radius: 10px;
 }
 
+h3 {
+  color: var(--branding-color);
+}
 
 footer {
   margin: 60px 30%;
