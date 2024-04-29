@@ -219,17 +219,19 @@ section .row {
   margin-top: 10px;
 }
 
-#frontend-certificate {
+.certificate {
   display: block;
   margin: 0 auto;
   width: 50%;
   height: 35%;
+
 }
 
 .btn-certificate {
   color: var(--branding-color);
   transition: all 200ms ease-in-out;
   display: block;
+  padding-bottom: 40px;
 }
 
 .btn-certificate:hover {
